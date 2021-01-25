@@ -1,0 +1,1253 @@
+<!doctype html>
+<html lang="en-US">
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Home - Eventor</title>
+      <link rel="icon" href="images/favicon.png" type="image/png">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C700%7CSen%3A400%2C700%2C800%7CSen%3Awght%40400%3B700%3B800&amp;display=swap" />
+      <link rel='stylesheet' href='css/explore.css' type='text/css' />
+      <link rel='stylesheet' href='css/form.css' type='text/css' />
+      <link rel='stylesheet' href='css/main.css' type='text/css' />
+      <link rel='stylesheet' href='css/main.min.css' type='text/css' />
+      <link rel='stylesheet' href='css/style.css' type='text/css' />
+      <link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' />
+      <link rel='stylesheet' href='css/footer.css' type='text/css' />
+      <link rel='stylesheet' href='css/listing.css' type='text/css' />
+      <link rel='stylesheet' href='css/slick.css'>
+      <link rel='stylesheet' href='css/fonts/font-awesome/css/font-awesome.css' type='text/css' />
+      <link rel='stylesheet' href='css/font-awesome.css' type='text/css' />
+      <link rel='stylesheet' href='css/fonts/material-icons/material-icons.css' type='text/css' />
+      <link rel='stylesheet' href='css/fonts/material-icons/font-style.css' type='text/css' />
+      <link rel='stylesheet' href='css/fonts/amenities/font-style.css' type='text/css'/>
+      <link rel="stylesheet" href="css/jquery-ui.css">
+      <style type="text/css">
+         :root {
+         --main: #e61e4d;
+         --main-shade: #d80566;
+         --minor: #000;
+         --minor-shade: #555;
+         --cursor-shade: rgba(255,255,255,.35);
+         --font-heading: Sen;
+         --font-body: Open Sans;
+         }
+         img.wp-smiley,
+         img.emoji {
+         display: inline !important;
+         border: none !important;
+         box-shadow: none !important;
+         height: 1em !important;
+         width: 1em !important;
+         margin: 0 .07em !important;
+         vertical-align: -0.1em !important;
+         background: none !important;
+         padding: 0 !important;
+         }
+         .dark-blue-bg{
+         background-color: #364F6B;
+         }
+         .brk-is-sticky .brk-header{
+         background-color: #364F6B;
+         }
+         #cover {
+         width: 50px;
+         height: 30px;
+         margin: 0 auto;
+         position: relative;
+         }
+         #checkbox {
+         margin: 0px;
+         width: 100%;
+         height: 30px;
+         cursor: pointer;
+         opacity: 0;
+         position: relative;
+         z-index: 3;
+         }
+         #bar {
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         right: 0px;
+         bottom: 0px;
+         background-color: #B0B0B0;
+         z-index: 1;
+         border-radius: 50px;
+         }
+         #knob {
+         position: absolute;
+         top: 2px;
+         left: 2px;
+         width: 26px;
+         height: 26px;
+         background-color: #fff;
+         border-radius: 50%;
+         transition: left 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28), margin-left 0.3s ease, width 0.3s ease, border-radius 0.3s ease;
+         box-shadow: 0px 1px 1px #7d7d7d;
+         z-index: 2;
+         }
+         #checkbox:active ~ #knob {
+         width: 66px;
+         border-radius: 20px;
+         }
+         #checkbox:checked ~ #knob {
+         left: 22px;
+         }
+         #checkbox:checked ~ #bar {
+         background-color: #000000;
+         }
+         #checkbox:checked:active ~ #knob {
+         margin-left: -32px;
+         }
+         select.form-control:not([size]):not([multiple]) {
+         height: calc(3rem + 2px);
+         }
+         input[type=email], input[type=number], input[type=password], input[type=tel], input[type=text], input[type=url], select, textarea{
+         height: 50px;
+         }
+         .form-control.field-1{
+         border: 2px solid #C3C3C3;
+         border-radius: 10px;
+         color: #999;
+         font-size: 14px;
+         }
+         .form-control.field-2{
+         border: 2px solid #C3C3C3;
+         border-bottom-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+         }
+         .form-control.field-3{
+         border-color: #C3C3C3 #C3C3C3 #C3C3C3 #C3C3C3;
+         border-style: solid solid solid solid;
+         border-width: 0px 1px 0px 2px;
+         border-radius: 0;
+         }
+         .form-control.field-4{
+         border-color: #C3C3C3 #C3C3C3 #C3C3C3 #C3C3C3;
+         border-style: solid solid solid solid;
+         border-width: 0px 2px 0px 0px;
+         border-radius: 0;
+         }
+         .form-control.field-5{
+         border: 2px solid #C3C3C3;
+         border-top-left-radius: 0px;
+         border-top-right-radius: 0px;
+         border-bottom-left-radius: 10px;
+         border-bottom-right-radius: 10px;
+         }
+         .form-control.field-6{
+         border: 2px solid #C3C3C3;
+         border-radius: 10px;
+         }
+         .form-control.field-7{
+         border: 2px solid #C3C3C3;
+         border-radius: 10px;
+         }
+         .form-control.field-8{
+         border: 2px solid #C3C3C3;
+         border-radius: 10px;
+         }
+         .form-control.field-1:focus{
+         border: 2px solid rgb(34, 34, 34) !important;
+         box-shadow: none;
+         }
+         .form-control.field-2:focus{
+         border: 2px solid rgb(34, 34, 34) !important;
+         box-shadow: none;
+         }
+         .form-control.field-3:focus{
+         border: 2px solid rgb(34, 34, 34) !important;
+         box-shadow: none;
+         }
+         .form-control.field-4:focus{
+         border: 2px solid rgb(34, 34, 34) !important;
+         box-shadow: none;
+         }
+         .form-control.field-5:focus{
+         border: 2px solid rgb(34, 34, 34) !important;
+         box-shadow: none;
+         }
+         .form-control.field-6:focus{
+         border: 2px solid rgb(34, 34, 34) !important;
+         box-shadow: none;
+         }
+         .form-control.field-7:focus{
+         border: 2px solid rgb(34, 34, 34) !important;
+         box-shadow: none;
+         }
+         .form-control.field-8:focus{
+         border: 2px solid rgb(34, 34, 34) !important;
+         box-shadow: none;
+         }
+         .cancellation-policy-sec{
+         border-left: 7px solid #FFAF0F;
+         }
+         .link-text{
+         color: #327ED1;
+         }
+         .styled-select select {
+         -moz-appearance:none; /* Firefox */
+         -webkit-appearance:none; /* Safari and Chrome */
+         appearance:none;
+         }
+         .styled-select {
+         position: relative;
+         display: inline-block;
+         color: #555;
+         }
+         .styled-select select {
+         padding: .5em 2.25em .5em 1em;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         appearance: none;
+         }
+         .styled-select:after {
+         font-family: 'FontAwesome';
+         position: absolute;
+         content: "\f107";
+         top: 5%;
+         right: 1rem;
+         font-size: 30px;
+         }
+         .debit-card:before {
+         font-family: 'FontAwesome';
+         position: absolute;
+         content: "\f09d";
+         top: 10%;
+         left: 1rem;
+         font-size: 25px;
+         color: #C3C3C3;
+         }
+         .rounded{
+         border-radius: 10px !important;
+         }
+         @media screen and (min-width: 1280px) and (max-width: 1365px)  {
+         .brk-site-title.brk-font-heading{
+         padding-left: 0px
+         }
+         }
+         .ui-datepicker-group.ui-datepicker-group-first{
+         padding-right: 1rem !important;
+         }
+         .ui-datepicker-group.ui-datepicker-group-last{
+         padding-left: 1rem !important;
+         }
+         .place-inside-form-control-label{
+         top: 24px !important;
+         font-size: 10px;
+         }
+         .place-inside-form-control{
+         top: 18px !important;
+         padding-top: 22px !important;
+         border-radius: 4px;
+         border: 2px solid rgb(34, 34, 34) !important
+         }
+         .modal-dialog{
+          margin-top: 30vh !important;
+         }
+      </style>
+   </head>
+   <body data-rsssl=1 class="rz_listing-template-default single single-rz_listing postid-388 theme-brikk routiz page">
+      <div id="page" class="site">
+         <div class="brk-mobile-header">
+            <span class="brk--site-name brk-font-heading">
+            <a href="#">
+            Eventor        </a>
+            </span>
+         </div>
+         <header class="brk-header dark-blue-bg">
+            <div class="brk-row">
+               <div class="brk-site-header">
+                  <div class="d-flex flex-row">
+                     <div class="brk-site-logo">
+                        <a href="#">
+                        </a>
+                        <div class="">
+                           <a href="#" class="float-left">
+                              <div>
+                                 <h1 class="brk-site-title brk-font-heading mb-0">
+                                    <img src="images/logo-white.png" width="200px" id="main-logo">                            
+                                 </h1>
+                              </div>
+                           </a>
+                           <div class="float-left text-white text-left mt-3 pt-1"><span class="pr-3 pb-1">|</span>&nbsp;&nbsp;PAYMENT</div>
+                        </div>
+                     </div>
+                     <!-- <div class="brk-site-actions">
+                        <nav class="brk-nav">
+                           <ul>
+                              <li>
+                                 <div class="brk-site-cta p-0">
+                                    <a href="#" class="bg-tra-round pl-2 pr-2 txt-dark"> <span>Be Our Merchant</span>
+                                    </a>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="brk-site-cta p-0 mt-1">
+                                    <a href="#"  class="bg-tra-round pl-2 pr-2 txt-dark"><i class="material-icons">language</i>
+                                    </a>
+                                 </div>
+                              </li>
+                              <li class="nav-item dropdown ml-auto pl-2">
+                                 <a href="#" class="nav-link dropdown-toggle brk--pad sign-in-btn" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i>&nbsp;<i class="fas fa-user"></i>
+                                 </a>
+                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item pt-2 pb-2" href="#">Log in</a>
+                                    <a class="dropdown-item pt-2 pb-2" href="#">Sign up</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item pt-2 pb-2" href="#">Host your home</a>
+                                    <a class="dropdown-item pt-2 pb-2" href="#">host and experience</a>
+                                    <a class="dropdown-item pt-2 pb-2" href="#">Help</a>
+                                 </div>
+                              </li>
+                           </ul>
+                        </nav>
+                        </div> -->
+                  </div>
+               </div>
+            </div>
+         </header>
+         <div class="container-fluid">
+            <main class="brk-main">
+               <div class="brk-content">
+                  <section id="primary" class="content-area">
+                     <div class="site-main">
+                        <div class="brk-row">
+                           <div class="row mt-5">
+                              <div class="col-lg-7 rz-content pr-lg-5 pr-md-5">
+                                 <div class="row">
+                                    <div class="col-lg-12 h4 pb-4 d-flex align-items-center border-bottom">
+                                        <div> <a href="#" class="text-dark"><i class="fas fa-chevron-left text-dark font-15"></i></a>&nbsp;&nbsp;</div>
+                                        <div><span class="pt-2">Confirm and pay</span></div>
+                                      </div>
+                                    <div class="col-lg-12 h4 mb-4 pt-2">Your trip</div>
+                                    <div class="col-lg-12">
+                                       <div class="d-flex justify-content-between">
+                                          <div>
+                                             <p class="mb-1"><strong>Dates</strong></p>
+                                             <p class="text-two mb-1">Jan 19,2021-Jan 21,2021</p>
+                                          </div>
+                                          <div><a href="#" class="text-dark"  data-toggle="modal" data-target="#dates-edits"><strong><u>Edit</u></strong></a></div>
+                                       </div>
+                                       <div class="d-flex justify-content-between">
+                                          <div>
+                                             <p class="mb-1"><strong>Guests</strong></p>
+                                             <p class="text-two mb-1">1 Guest</p>
+                                          </div>
+                                          <div><a href="#" class="text-dark" data-toggle="modal" data-target="#guests-edits"><strong><u>Edit</u></strong></a></div>
+                                       </div>
+                                       <div class="d-flex justify-content-between border-top border-bottom py-3 my-3">
+                                          <div class="mt-1">
+                                             <strong> Is this a work trip?</strong>
+                                          </div>
+                                          <div>
+                                             <div id="cover">
+                                                <input type="checkbox" id="checkbox">
+                                                <div id="bar"></div>
+                                                <div id="knob"></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-12 h4 mb-4">Booking Details</div>
+                                    <div class="col-lg-12">
+                                       <form class="pl-3 pr-3">
+                                          <div class="row">
+                                             <div class="col p-0 styled-select debit-card">
+                                                <select  class="form-control field-1 mb-4 pl-5">
+                                                   <option selected>Credit or Debit Card</option>
+                                                   <option>Google Pay</option>
+                                                   <option>Amazon Pay</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col p-0 floating-label">
+                                                <input type="text" class="form-control floating-input field-2 pl-3" id="usr" placeholder=" ">
+                                                <label for="usr">Event Venue</label>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col p-0 floating-label">
+                                                <input type="text" class="form-control floating-input field-3 pl-3" id="Code" placeholder=" ">
+                                                <label for="Code">Post Code</label>
+                                             </div>
+                                             <div class="col p-0 styled-select floating-label">
+                                                <select  class="floating-select form-control field-4" onclick="this.setAttribute('value', this.value);" value="">
+                                                   <option value=""></option>
+                                                   <option>Alabama</option>
+                                                   <option>Alaska</option>
+                                                   <option>Arizona</option>
+                                                   <option>Arkansas</option>
+                                                   <option>California</option>
+                                                   <option>Colorado</option>
+                                                   <option>Connecticut</option>
+                                                   <option>Delaware</option>
+                                                   <option>Florida</option>
+                                                   <option>Georgia</option>
+                                                   <option>Hawaii</option>
+                                                   <option>Idaho</option>
+                                                   <option>Illinois</option>
+                                                   <option>Indiana</option>
+                                                   <option>Iowa</option>
+                                                   <option>Kansas</option>
+                                                   <option>Kentucky</option>
+                                                   <option>Louisiana</option>
+                                                   <option>Maine</option>
+                                                   <option>Maryland</option>
+                                                   <option>Massachusetts</option>
+                                                   <option>Michigan</option>
+                                                   <option>Minnesota</option>
+                                                   <option>Mississippi</option>
+                                                   <option>Missouri</option>
+                                                   <option>Montana</option>
+                                                   <option>Nebraska</option>
+                                                </select>
+                                                <label>State</label>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col p-0 styled-select floating-label">
+                                                <select  class="floating-select form-control field-5" onclick="this.setAttribute('value', this.value);" value="">
+                                                   <option value=""></option>
+                                                   <option>Afghanistan</option>
+                                                   <option>Albania</option>
+                                                   <option>Algeria</option>
+                                                   <option>Andorra</option>
+                                                   <option>Angola</option>
+                                                   <option>Antigua and Barbuda</option>
+                                                   <option>Argentina</option>
+                                                   <option>Armenia</option>
+                                                   <option>Australia</option>
+                                                   <option>Austria</option>
+                                                   <option>Austrian Empire</option>
+                                                   <option>Azerbaijan</option>
+                                                </select>
+                                                <label>Country/Region</label>
+                                             </div>
+                                          </div>
+                                          <div class="row mt-4">
+                                             <div class="col p-0 floating-label">
+                                                <input type="text" class="form-control floating-input field-6 pl-3" id="usr" placeholder=" ">
+                                                <label for="usr">Contact Number</label>
+                                             </div>
+                                          </div>
+                                          <div class="row floating-label">      
+                                            <textarea class="form-control mt-4 field-6 floating-input floating-textarea pt-3 pl-3"  rows="3" style="height:150px" placeholder=" "></textarea>
+                                            <label class="pt-4">Notes</label>
+                                          </div>
+                                       </form>
+                                    </div>
+                                    <div class="col-lg-12 mt-4 mb-4">
+                                       <a href="#" class="text-dark" data-toggle="modal" data-target="#apply-promo-code">
+                                       <strong>
+                                       <u>Enter a coupon</u>
+                                       </strong>
+                                       </a>
+                                    </div>
+                                    <div class="col-lg-12">
+                                       <div class="col-lg-12 h4 mb-4 px-0 border-top pt-4">Required for your trip</div>
+                                       <div class="d-flex justify-content-between">
+                                          <div>
+                                             <p class="mb-1"><strong>Message the host</strong></p>
+                                             <p class="text-two mb-1">Let the host know why you're travelling and when you'll check in.</p>
+                                          </div>
+                                          <div><button type="button" class="btn btn-outline-dark"><strong>Add</strong></button></div>
+                                       </div>
+                                       <div class="d-flex justify-content-between mt-3 border-bottom pb-4">
+                                          <div>
+                                             <p class="mb-1"><strong>Phone number</strong></p>
+                                             <p class="text-two mb-1">Add and confirm your phone number to get trip updates.</p>
+                                          </div>
+                                          <div><button type="button" class="btn btn-outline-dark"><strong>Add</strong></button></div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                       <div class="cancellation-policy-sec pl-3 mt-4 mb-4">
+                                          <p class="h4">Cancellation policy</p>
+                                          <p>Free cancellation until 3:00 PM on Jan 18. After that, cancel before 3:00 PM on Jan 19 and get a full refund, minu the first night and service fee. <a href="#" class="text-dark"><strong>Learn more</strong></a> </p>
+                                          <p><strong>Make sure this host's cancellation policy works for you.</strong> Our Extenuating Circumstance policy may not cover travel disruptions caused by known events, like COVID-19, or foreseeable events, like common severe weather. <a href="#" class="text-dark"><strong>Learn more</strong></a> </p>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-12 font-12">
+                                       <div class="border-top pt-3">By selecting the button below, I agree to the <a href="#" class="link-text"><u>House Rules,</u></a> <a href="#" class="link-text"><u>Safety Diselostres,</u></a> <a href="#" class="link-text"><u>Cancellation Poky,</u></a> <a href="#" class="link-text"><u>Airbnb's social-distancing  and other COVID-19-related  guidelines,</u></a> and the <a href="#" class="link-text"><u>Guest Refund Policy.</u></a> I also agree to pay the total amount shown, which includes Service Fees. </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                       <div class="rz-action-footer rz-text-left mt-4 mb-4">
+                                          <a href="#" class="rz-button rz-button-accent rz-large" data-modal="signin">
+                                          <span><i class="fas fa-lock"></i>&nbsp;&nbsp;Confirm and pay</span>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-5 rz-sidebar pl-lg-5 pl-md-5">
+                                 <div class="border p-4 rounded rz-single-sidebar rz--sticky">
+                                    <div class="d-flex justify-content-between mb-3 border-bottom">
+                                       <div class="d-flex pb-4">
+                                          <div class="col-4 p-0"><img src="images/product-1.jpg" width="150px;" class="rounded"></div>
+                                          <div class="col-8 text-dark pl-3 pr-3">
+                                             <p class="font-14 mb-1">Private room in apartment in shah alam</p>
+                                             <p class="font-16 mb-1">Nordic • Trefoll,Setia Ala m.Convention.824- 09</p>
+                                             <p class="font-14 mb-1 text-two">2 beds • 2 baths</p>
+                                             <p><i class="fas fa-star font-16 text-danger"></i>&nbsp;&nbsp;<strong>No reviews</strong></p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                       <div>
+                                          <h5 class="mb-0 mt-2 font-21">Price details</h5>
+                                       </div>
+                                       <div>
+                                          <div class="d-flex justify-content-between pt-3">
+                                             <div>RM168.30 x 2 nights</div>
+                                             <div>
+                                                <div class="m-0 font-16 text-dark">RM336.60</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div>
+                                          <div class="d-flex justify-content-between pt-3">
+                                             <div><u>Cleaning Fee</u></div>
+                                             <div>
+                                                <div class="m-0 font-16 text-dark">RM30.00</div>
+                                             </div>
+                                          </div>
+                                          <div class="d-flex justify-content-between pt-3">
+                                             <div><u>Service Fee</u></div>
+                                             <div>
+                                                <div class="m-0 font-16 text-dark">RM54.87</div>
+                                             </div>
+                                          </div>
+                                          <div class="d-flex justify-content-between pt-3">
+                                             <div><strong>Total (USD)</strong></div>
+                                             <div>
+                                                <div class="m-0 font-16 text-dark"><strong>RM421.47</strong></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div>
+                                          <div class="col-lg-12 p-0 pt-4 border-top mt-4">
+                                             <p class="mb-1"><strong>Free cancellation until 3:00 PM on Jan 18</strong></p>
+                                             <p class="text-two mb-1 font-15">After that, cancel before 3:00 PM on Jan 19 and get a full refund, minus the first and service fee. <a href="#" class="text-dark"><u><strong>Learn more</strong></u></a> </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+                  <div class="brk-mobile-listing-top">
+                     <div class="brk-row">
+                        <div class="brk-grid">
+                           <div class="brk-col-6">
+                              <a href="#">
+                              <i class="fas fa-chevron-left brk-mr-1"></i>
+                              <span>Back</span>
+                              </a>
+                           </div>
+                           <div class="brk-col-6">
+                              <!-- // -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- <div class="brk-mobile-listing-bottom brk--booking">
+                     <div class="brk-row">
+                        <div class="brk-grid brk-align-center brk-no-wrap">
+                           <div class="brk-col-auto brk--meta">
+                              <div class="rz--price">
+                                 <span class="rz--currency">&#036;</span>
+                                 <span class="rz--amount rz-font-heading">190</span>
+                                 <span class="rz--text">/ night</span>
+                              </div>
+                           </div>
+                           <div class="brk-col-auto brk--action">
+                              <a href="#" class="rz-button rz-button-accent" data-action="toggle-mobile-action">
+                              <span>Reserve</span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     </div> -->
+                  <div class="rz-modal rz-modal-report" data-id="report">
+                     <a href="#" class="rz-close">
+                     <i class="fas fa-times"></i>
+                     </a>
+                     <div class="rz-modal-heading">
+                        <h4 class="rz--title">Send listing report</h4>
+                     </div>
+                     <div class="rz-modal-content">
+                        <div class="rz-modal-append">
+                           <div class="rz-modal-container rz-scrollbar">
+                              <div class="rz-reported rz-none">
+                                 <div class="rz--icon">
+                                    <i class="fas fa-ban"></i>
+                                    <p>You already reported this listing</p>
+                                 </div>
+                              </div>
+                              <div class="rz-report-submit">
+                                 <p>This is private and won&#039;t be shared with the owner.</p>
+                                 <div class="rz-form">
+                                    <input type="hidden" id="routiz_report" name="routiz_report" value="b6df5516f5" /><input type="hidden" name="_wp_http_referer" value="/brikk/listing/mercedes-benz-a-200-cdi/" />                                
+                                    <div class="rz-grid">
+                                       <div class="rz-form-group rz-field rz-col-12" data-type="radio" data-storage="field" data-disabled="no" data-id="report_reason">
+                                          <div class="rz-radio-fieldset">
+                                             <label class="rz-radio">
+                                             <input type="radio" name="rz_report_reason" value="incorrect" >
+                                             <i class="rz-transition"></i>
+                                             <span>Inaccurate or incorrect</span>
+                                             </label>
+                                             <label class="rz-radio">
+                                             <input type="radio" name="rz_report_reason" value="not_real" >
+                                             <i class="rz-transition"></i>
+                                             <span>Not a real listing</span>
+                                             </label>
+                                             <label class="rz-radio">
+                                             <input type="radio" name="rz_report_reason" value="scam" >
+                                             <i class="rz-transition"></i>
+                                             <span>It&#039;s a scam</span>
+                                             </label>
+                                             <label class="rz-radio">
+                                             <input type="radio" name="rz_report_reason" value="offensive" >
+                                             <i class="rz-transition"></i>
+                                             <span>It&#039;s offensive</span>
+                                             </label>
+                                             <label class="rz-radio">
+                                             <input type="radio" name="rz_report_reason" value="else" >
+                                             <i class="rz-transition"></i>
+                                             <span>Something else</span>
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="rz-modal-footer rz--top-border rz-text-center">
+                              <a href="#" id="rz-send-report" class="rz-button rz-button-accent rz-modal-button">
+                                 <span>Send Report</span>
+                                 <div class="rz-preloader">
+                                    <i class="fas fa-sync fa-spin"></i>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="rz-preloader">
+                        <i class="fas fa-sync fa-spin"></i>
+                     </div>
+                  </div>
+               </div>
+            </main>
+         </div>
+         <div class="footer mt-5">
+            <div class="wrapper">
+               <div class="footer_colm">
+                  <h1>EVENTOR MY</h1>
+                  <ul>
+                     <li><a href="#">About Eventor</a></li>
+                     <li><a href="#">Careers</a></li>
+                     <li><a href="#">Corporate</a></li>
+                     <li><a href="#">Terms & Conditions</a></li>
+                     <li><a href="#">Privacy Policy</a></li>
+                     <li><a href="#">Create a Store in Eventor</a></li>
+                  </ul>
+               </div>
+               <div class="footer_colm">
+                  <h1>CUSTOMER SERVICE</h1>
+                  <ul>
+                     <li><a href="#">Help Center</a></li>
+                     <li><a href="#">Payment</a></li>
+                     <li><a href="#">How to Buy</a></li>
+                     <li><a href="#">How to Return</a></li>
+                     <li><a href="#">Delivery Information</a></li>
+                     <li><a href="#">Online Live Chat</a></li>
+                     <li><a href="#">Feedback to Eventor</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                  </ul>
+               </div>
+               <div class="footer_colm_sub">
+                  <h1>EXCLUSIVE DEALS AND OFFERS!</h1>
+                  <h2>Subscribe and get great deals!</h2>
+                  <input type="text" class="subscribe_box" onfocus="if (this.value == 'Enter Your Email Address') {this.value='';}" onblur="if (this.value == '') {this.value='Enter Your Email Address';}" value="Enter Your Email Address"  />
+                  <div class="gender"><label class="container">Male
+                     <input type="radio" checked="checked" name="radio">
+                     <span class="checkmark"></span>
+                     </label>
+                  </div>
+                  <div class="gender"><label class="container">Female
+                     <input type="radio" checked="checked" name="radio">
+                     <span class="checkmark"></span>
+                     </label>
+                  </div>
+                  <div class="signup"><input type="submit" value="SIGN UP" class="signup_btn" /></div>
+               </div>
+               <div class="footer_colm1">
+                  <div class="footer_logo"><a href="#"><img src="images/footer-logo.png" alt="loog" /></a></div>
+                  <ul class="socialicon">
+                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                     <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                     <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  </ul>
+               </div>
+               <div class="clear"></div>
+            </div>
+            <div class="copyright">
+               <p class="mb-0">&copy; 2019 Eventor MY. All Rights Reserved.</p>
+            </div>
+         </div>
+      </div>
+      <!-- end .site -->
+      <div class="rz-modal rz-modal-lightbox rz-no-select" data-id="lightbox">
+         <a href="#" class="rz-close">
+         <i class="fas fa-times"></i>
+         </a>
+         <div class="rz-modal-heading">
+            <h4 class="rz--title">&nbsp;</h4>
+         </div>
+         <div class="rz-modal-content">
+            <div class="rz-modal-image">
+               <!-- append immage here -->
+            </div>
+            <a href="#" class="rz-lightbox-nav" data-action="prev">
+            <span><i class="fas fa-arrow-left"></i></span>
+            </a>
+            <a href="#" class="rz-lightbox-nav" data-action="next">
+            <span><i class="fas fa-arrow-right"></i></span>
+            </a>
+         </div>
+         <div class="rz-lightbox-counter">
+            <span class="rz--current"></span>&nbsp;&sol;&nbsp;<span class="rz--total"></span>
+         </div>
+         <div class="rz-preloader">
+            <i class="fas fa-sync fa-spin"></i>
+         </div>
+      </div>
+      <div class="brk-mobile-bar">
+         <div class="brk-mobile-row">
+            <ul>
+               <li class="">
+                  <a href="#" data-name="Explore" >
+                  <i class="material-icon-search"></i>
+                  </a>
+               </li>
+               <li class="">
+                  <a href="#" data-name="Favorites" data-modal="signin">
+                  <i class="material-icon-favorite_outline"></i>
+                  </a>
+               </li>
+               <li class="brk--focus">
+                  <a href="#" data-name="Sign-In" data-modal="signin">
+                  <i class="material-icon-person"></i>
+                  </a>
+               </li>
+               <li class="">
+                  <a href="#" data-name="Messages" data-modal="signin">
+                  <i class="material-icon-chat_bubble_outline"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" data-action="toggle-mobile-nav">
+                  <i class="material-icon-menu"></i>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="brk-mobile-nav">
+         <div class="brk--header">
+            <div class="brk-site-logo">
+               <a href="#">
+               <span class="brk-site-title brk-font-heading">
+               Brikk.                    </span>
+               </a>
+            </div>
+         </div>
+         <div class="brk--nav">
+            <nav class="brk-nav-mobile">
+               <ul id="menu-primary-1" class="menu">
+                  <li class="md-action-dynamic-explore menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-159">
+                     <a href="#">Explore</a>
+                     <ul class="sub-menu">
+                        <li class="md-action-dynamic-explore menu-item menu-item-type-custom menu-item-object-custom menu-item-1678"><a href="#">Places to stay</a></li>
+                        <li class="md-action-dynamic-explore menu-item menu-item-type-custom menu-item-object-custom menu-item-1679"><a href="#">Bar &#038; Restaurants</a></li>
+                        <li class="md-action-dynamic-explore menu-item menu-item-type-custom menu-item-object-custom menu-item-1680"><a href="#">Experiences</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2615"><a href="#">Map Styles</a></li>
+                     </ul>
+                  </li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1674">
+                     <a href="#">More</a>
+                     <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1699"><a href="#">Submit a listing</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1700"><a href="#">Dashboard</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1884"><a href="#">Author&#8217;s page</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1846"><a href="#">Shop</a></li>
+                     </ul>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1689"><a href="#">Tips and Tricks</a></li>
+               </ul>
+            </nav>
+         </div>
+         <div class="brk--footer">
+            <div class="brk-ml-auto">
+               <a href="#" class="brk--close" data-action="toggle-mobile-nav">
+               <i class="fas fa-times"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <span class="rz-overlay"></span>
+      <div class="rz-modal rz-modal-conversation" data-id="conversation">
+         <a href="#" class="rz-close">
+         <i class="fas fa-times"></i>
+         </a>
+         <div class="rz-modal-heading">
+            <h4 class="rz--title">Send Message</h4>
+         </div>
+         <div class="rz-modal-content">
+            <div class="rz-modal-append"></div>
+         </div>
+         <div class="rz-preloader">
+            <i class="fas fa-sync fa-spin"></i>
+         </div>
+      </div>
+      <div class="rz-modal rz-modal-favorites" data-id="favorites">
+         <a href="#" class="rz-close">
+         <i class="fas fa-times"></i>
+         </a>
+         <div class="rz-modal-heading">
+            <h4 class="rz--title">My favorites</h4>
+         </div>
+         <div class="rz-modal-content">
+            <div class="rz-modal-append"></div>
+         </div>
+         <div class="rz-preloader">
+            <i class="fas fa-sync fa-spin"></i>
+         </div>
+      </div>
+      <div class="rz-modal rz-modal-application" data-id="action-application">
+         <a href="#" class="rz-close">
+         <i class="fas fa-times"></i>
+         </a>
+         <div class="rz-modal-heading">
+            <h4 class="rz--title">Application Form</h4>
+         </div>
+         <div class="rz-modal-content">
+            <div class="rz-modal-append"></div>
+         </div>
+         <div class="rz-preloader">
+            <i class="fas fa-sync fa-spin"></i>
+         </div>
+      </div>
+      <div class="rz-modal rz-modal-share" data-id="share">
+         <a href="#" class="rz-close">
+         <i class="fas fa-times"></i>
+         </a>
+         <div class="rz-modal-heading rz--border">
+            <h4 class="rz--title">Share</h4>
+         </div>
+         <div class="rz-modal-content">
+            <div class="rz-modal-append">
+               <div class="rz-modal-container rz-scrollbar">
+                  <div class="rz-signin-social rz-mb-1">
+                     <ul>
+                        <li>
+                           <a href="#" class="rz-button rz--gg" target="_blank">
+                           <span class="fab fa-facebook rz-mr-1"></span>
+                           <span>Share with Facebook</span>
+                           </a>
+                        </li>
+                        <li class="rz-mt-2">
+                           <a href="#" class="rz-button rz--gg">
+                           <span class="fab fa-twitter rz-mr-1"></span>
+                           <span>Share with Twitter</span>
+                           </a>
+                        </li>
+                        <li class="rz-mt-2">
+                           <a href="#" class="rz-button rz--gg">
+                           <span class="fab fa-pinterest rz-mr-1"></span>
+                           <span>Share with Pinterest</span>
+                           </a>
+                        </li>
+                        <li class="rz-mt-2">
+                           <a href="#" class="rz-button rz--gg">
+                           <span class="far fa-paper-plane rz-mr-1"></span>
+                           <span>Share by email</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="rz-preloader">
+            <i class="fas fa-sync fa-spin"></i>
+         </div>
+      </div>
+      <div class="rz-modal rz-modal-demo-limit-notify" data-id="demo-limit-notify">
+         <a href="#" class="rz-close">
+         <i class="fas fa-times"></i>
+         </a>
+         <div class="rz-modal-heading">
+            <h4 class="rz--title">Showcase Limitation</h4>
+         </div>
+         <div class="rz-modal-content">
+            <div class="rz-modal-append">
+               <div class="rz-modal-container rz-scrollbar">
+                  <div class="rz--icon">
+                     <i class="fas fa-ban"></i>
+                     <span class="rz--notify">This is a showcase site. Some of the features are disabled in order to preserve the required content.</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="rz-preloader">
+            <i class="fas fa-sync fa-spin"></i>
+         </div>
+      </div>
+      <div id="fb-root"></div>
+      <div id="wp-link-backdrop" style="display: none"></div>
+      <div id="wp-link-wrap" class="wp-core-ui" style="display: none" role="dialog" aria-labelledby="link-modal-title">
+         <form id="wp-link" tabindex="-1">
+            <input type="hidden" id="_ajax_linking_nonce" name="_ajax_linking_nonce" value="50599f4033" />      
+            <h1 id="link-modal-title">Insert/edit link</h1>
+            <button type="button" id="wp-link-close"><span class="screen-reader-text">Close</span></button>
+            <div id="link-selector">
+               <div id="link-options">
+                  <p class="howto" id="wplink-enter-url">Enter the destination URL</p>
+                  <div>
+                     <label><span>URL</span>
+                     <input id="wp-link-url" type="text" aria-describedby="wplink-enter-url" /></label>
+                  </div>
+                  <div class="wp-link-text-field">
+                     <label><span>Link Text</span>
+                     <input id="wp-link-text" type="text" /></label>
+                  </div>
+                  <div class="link-target">
+                     <label><span></span>
+                     <input type="checkbox" id="wp-link-target" /> Open link in a new tab</label>
+                  </div>
+               </div>
+               <p class="howto" id="wplink-link-existing-content">Or link to existing content</p>
+               <div id="search-panel">
+                  <div class="link-search-wrapper">
+                     <label>
+                     <span class="search-label">Search</span>
+                     <input type="search" id="wp-link-search" class="link-search-field" autocomplete="off" aria-describedby="wplink-link-existing-content" />
+                     <span class="spinner"></span>
+                     </label>
+                  </div>
+                  <div id="search-results" class="query-results" tabindex="0">
+                     <ul></ul>
+                     <div class="river-waiting">
+                        <span class="spinner"></span>
+                     </div>
+                  </div>
+                  <div id="most-recent-results" class="query-results" tabindex="0">
+                     <div class="query-notice" id="query-notice-message">
+                        <em class="query-notice-default">No search term specified. Showing recent items.</em>
+                        <em class="query-notice-hint screen-reader-text">Search or use up and down arrow keys to select an item.</em>
+                     </div>
+                     <ul></ul>
+                     <div class="river-waiting">
+                        <span class="spinner"></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="submitbox">
+               <div id="wp-link-cancel">
+                  <button type="button" class="button">Cancel</button>
+               </div>
+               <div id="wp-link-update">
+                  <input type="submit" value="Add Link" class="button button-primary" id="wp-link-submit" name="wp-link-submit">
+               </div>
+            </div>
+         </form>
+      </div>
+      <!--Model start-->      
+      <div class="modal fade" id="apply-promo-code" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="col-lg-12 d-flex border-bottom pt-2 pb-2">
+                  <button type="button" class="text-left bg-white border-0 font-25" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+                  <h5 class="modal-title text-center w-100 pr-4 mt-1 font-18" id="exampleModalLabel">Coupons</h5>
+               </div>
+               <div class="modal-body">
+                  <div class="row pl-4 pr-4">
+                     <div class="col p-0 floating-label">
+                        <input type="text" class="form-control floating-input field-8 pl-3 formfield" id="coupon"  placeholder=" ">
+                        <label for="coupon">Enter a coupon code</label>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" id="loccat" class="btn bg-dark text-white w-100 ml-2 mr-2 pt-2 pb-2 rounded" data-dismiss="modal">Apply</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Model start-->
+      <!--Model start-->      
+      <div class="modal fade" id="dates-edits" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content rounded">
+               <div class="col-lg-12 d-flex pt-2 pb-2">
+                  <button type="button" class="text-left bg-white border-0 font-25" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+               </div>
+               <div class="modal-body pt-0">
+                  <div class="rz-mod-content">
+                     <div class="d-flex justify-content-between">
+                        <div>
+                           <h4 class="mb-0">3 nights</h4>
+                           <p class="dark-grey">6 beds · 2 baths</p>
+                        </div>
+                        <div>
+                           <div class="rz-form" style="width: 15rem;">
+                              <div class="d-flex ml-1 mr-1">
+                                 <div class="flex-fill place-inside-form-group">
+                                    <input type="text" class="place-inside-form-control rounded-top"  placeholder="Add date" id="check-in"/>
+                                    <label class="place-inside-form-control-label">Check-in</label>
+                                 </div>
+                                 <div class="flex-fill place-inside-form-group">
+                                    <input type="text" class="place-inside-form-control rounded-top"  placeholder="Add date" id="check-out"/>
+                                    <label class="place-inside-form-control-label">Checkout</label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="pl-3 pr-3">
+                        <div id="datepicker-dates-edits"></div>
+                     </div>
+                     <div class="rz-col-12 rz-col-rz-12 pt-1 pb-0 p-0">
+                        <div class="d-flex justify-content-between">
+                           <div class="p-2">
+                              <a href="#" class="text-dark">
+                                 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                    <path d="M29 5a2 2 0 0 1 1.995 1.85L31 7v18a2 2 0 0 1-1.85 1.995L29 27H3a2 2 0 0 1-1.995-1.85L1 25V7a2 2 0 0 1 1.85-1.995L3 5zm0 2H3v18h26zm-8 13v2H11v-2zm3-5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm16-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                 </svg>
+                              </a>
+                           </div>
+                           <div class="p-2">
+                              <div class="float-left pt-2"><a href="#">
+                                 <strong class="text-dark f-w-600 font-16"><u>Clear Dates</u></strong>
+                                 </a>
+                              </div>
+                              <div class="float-left">
+                                 <button type="button" class="btn bg-dark text-white w-100 ml-2 mr-2 pt-2 pb-2 rounded" data-dismiss="modal">SAVE</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Model start-->
+      <!--Model start-->      
+      <div class="modal fade" id="guests-edits" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content rounded">
+               <div class="col-lg-12 d-flex pt-2 pb-2">
+                  <button type="button" class="text-left bg-white border-0 font-25 pl-3" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+               </div>
+               <div class="modal-body pt-0">
+                  <div class="rz--dropdown">
+                     <div class="rz--inner">
+                        <div class="rz--title h4 pl-3 pb-3">Guests</div>
+                        <div>
+                           <div>
+                              <div class="d-flex">
+                                 <div class="rz--name col-5 pt-2"><strong>Adults</strong></div>
+                                 <div class="rz--field">
+                                    <div class="rz-form-group rz-field rz-col-12" data-input-type="stepper" data-type="number" data-storage="field" data-disabled="no" data-id="guest_adults">
+                                       <div class="rz-number-type-stepper" data-type="stepper">
+                                          <div class="rz-stepper">
+                                             <div class="rz--row">
+                                                <div class="rz--cell">
+                                                   <a href="#" class="rz-stepper-button" data-action="decrease">
+                                                   <i class="fas fa-minus"></i>
+                                                   </a>
+                                                </div>
+                                                <div class="rz--cell rz-flex rz-flex-column rz-justify-center">
+                                                   <p class="rz-stepper-text"><strong>1</strong></p>
+                                                </div>
+                                                <div class="rz--cell">
+                                                   <a href="#" class="rz-stepper-button" data-action="increase">
+                                                   <i class="fas fa-plus"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <input class="rz-none" type="number" name="guest_adults" value="1" data-format="<strong>%s</strong>"  >
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="d-flex">
+                                 <div class="rz--name col-5">
+                                    <p class="mb-0"><strong>Children</strong></p>
+                                    <p class="mb-0 font-12 dark-grey">Ages 2–12</p>
+                                 </div>
+                                 <div class="rz--field">
+                                    <div class="rz-form-group rz-field rz-col-12" data-input-type="stepper" data-type="number" data-storage="field" data-disabled="no" data-id="guest_children">
+                                       <div class="rz-number-type-stepper" data-type="stepper">
+                                          <div class="rz-stepper">
+                                             <div class="rz--row">
+                                                <div class="rz--cell">
+                                                   <a href="#" class="rz-stepper-button" data-action="decrease">
+                                                   <i class="fas fa-minus"></i>
+                                                   </a>
+                                                </div>
+                                                <div class="rz--cell rz-flex rz-flex-column rz-justify-center">
+                                                   <p class="rz-stepper-text"><strong>0</strong></p>
+                                                </div>
+                                                <div class="rz--cell">
+                                                   <a href="#" class="rz-stepper-button" data-action="increase">
+                                                   <i class="fas fa-plus"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <input class="rz-none" type="number" name="guest_children" value="0" data-format="<strong>%s</strong>"  >
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="d-flex">
+                                 <div class="rz--name col-5">
+                                    <p class="mb-0"><strong>Infants</strong></p>
+                                    <p class="mb-0 font-12 dark-grey">Under 2</p>
+                                 </div>
+                                 <div class="rz--field">
+                                    <div class="rz-form-group rz-field rz-col-12" data-input-type="stepper" data-type="number" data-storage="field" data-disabled="no" data-id="guest_infants">
+                                       <div class="rz-number-type-stepper" data-type="stepper">
+                                          <div class="rz-stepper">
+                                             <div class="rz--row">
+                                                <div class="rz--cell">
+                                                   <a href="#" class="rz-stepper-button" data-action="decrease">
+                                                   <i class="fas fa-minus"></i>
+                                                   </a>
+                                                </div>
+                                                <div class="rz--cell rz-flex rz-flex-column rz-justify-center">
+                                                   <p class="rz-stepper-text"><strong>0</strong></p>
+                                                </div>
+                                                <div class="rz--cell">
+                                                   <a href="#" class="rz-stepper-button" data-action="increase">
+                                                   <i class="fas fa-plus"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <input class="rz-none" type="number" name="guest_infants" value="0" max="3" data-format="<strong>%s</strong>"  >
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="rz--footer ">
+                        <p class="rz--info font-13 pl-3 pr-3">6 guests maximum. Infants don’t count toward the number of guests.</p>
+                        <div class="rz-text-right pr-3 pl-3">
+                           <div class="d-flex justify-content-between">
+                              <div>
+                                 <a href="#" class="text-dark"><u>Cancel</u></a>
+                              </div>
+                              <div>
+                                 <a href="#" class="rz-button" data-action="guests-close">
+                                 <span>SAVE</span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Model start-->
+   </body>
+   <script type='text/javascript' src='js/jquery-3.2.1.slim.min.js'></script>
+   <script type='text/javascript' src='js/jquery-1.12.4.js'></script>
+   <script type='text/javascript' src='js/jquery-ui.js'></script>
+   <script type='text/javascript' src='js/flickity.pkgd.min.js'></script>
+   <script type='text/javascript' src='js/form.js'></script>
+   <script type='text/javascript' src='js/main.js'></script>
+   <script type='text/javascript' src='js/main.min.js'></script>
+   <script type='text/javascript' src='js/popper.min.js'></script>
+   <script type='text/javascript' src='js/bootstrap.min.js'></script>
+   <script type='text/javascript' src='js/select2.js'></script>
+   <script type='text/javascript' src='js/sortable.min.js'></script>
+   <script type='text/javascript' src='js/custom.min.js'></script>
+   <script type='text/javascript' src='js/slick.min.js'></script>
+   <script type='text/javascript' src='js/custom.js'></script>
+   <script type="text/javascript">
+      var array = ["2020-12-14", "2020-12-15", "2020-12-16", "2020-12-17", "2020-12-18"]
+
+      
+      var $datepicker = $('#ui-datepicker-div');
+      $datepicker.css({
+         top: 10,
+         left: 10
+      });
+      
+      
+      jQuery(function($) {
+      
+         $('#datepicker-dates-edits').datepicker({
+             numberOfMonths: 2,
+             beforeShowDay: function(date) {
+                 var string = jQuery.datepicker.formatDate('yy-mm-dd', date);
+                 return [array.indexOf(string) == -1]
+             }
+         });
+      
+         var debounce;
+         $(window).resize(function() {
+             clearTimeout(debounce);
+             if ($(window).width() < 768) {
+                 debounce = setTimeout(function() {
+                     debounceDatepicker(1)
+                 }, 250);
+             } else {
+                 debounce = setTimeout(function() {
+                     debounceDatepicker(2)
+                 }, 250);
+             }
+         }).trigger('resize');
+      
+         function debounceDatepicker(no) {
+             $("#datepicker-dates-edits").datepicker("option", "numberOfMonths", no);
+             $("#datepicker-dates-edits").children('div').addClass("w-100 border-0");
+         }
+      });
+
+
+      $(document).ready(function() {
+    $('.formfield').on('input', function() {
+        var nFilled = $('.formfield').filter(function() {
+            return $.trim( this.value ) !== '';
+        }).length;
+        $('#loccat').prop('disabled', nFilled === 0);
+    })
+    .trigger('input');
+});
+   </script>
+</html>
